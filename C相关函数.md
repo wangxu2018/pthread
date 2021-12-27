@@ -99,23 +99,11 @@ pthread_attr_destroy(&attr)	销毁线程属性所占用的资源
 
 ## **相关代码实现**
 
-- **code/pthread_func.c**
-
-  线程的功能函数使用
-
-- **code/pthread_exit_return.c**
-
+- **code/pthread_exit_return_join.c**
   - exit、return、pthread_exit三个函数的使用
-
-- **code/pthread_join.c**
-
   - 回收线程的练习，以及子线程返回的参数获取
 
-- **code/pthread_set_attr_detach.c**
+- **code/pthread_set_attr_detach_stack_addr.c**
+  - 创建线程时设置为分离线程、并且根据属性设置创建线程栈内存的大小以及初始地址
 
-  - 创建线程时设置为分离线程
-
-- **code/pthread_set_child_pthread_stack_size.c**
-
-  - 创建时动态设置创建的线程的栈的大小
 
